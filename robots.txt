@@ -1,0 +1,16 @@
+#robots.CMS
+User-agent: *
+Disallow:
+Disallow: /*.php*
+Disallow: /*.js*
+Disallow: /*.css*
+Disallow: /backend/ 
+Disallow: /common/ 
+Disallow: /console/ 
+Disallow: /frontend/ 
+Disallow: /statics/ 
+Disallow: /storage/
+Disallow: /core/
+Disallow: /vendor/
+Disallow: /upload/
+Sitemap: /sitemap.xml

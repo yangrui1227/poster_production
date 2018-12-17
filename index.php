@@ -26,7 +26,7 @@ $config['components']['view'] = [
     ],
 ];
 
-if (!YII_ENV_TEST) {
+if (YII_ENV_DEV) {
     // configuration adjustments for 'dev' environment
     $config['bootstrap'][] = 'debug';
     $config['modules']['debug'] = [

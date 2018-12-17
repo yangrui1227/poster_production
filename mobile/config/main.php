@@ -9,11 +9,15 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'mobile\controllers',
+     'defaultRoute' => 'site/index',   //默认路由
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-mobile',
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'H9rnf_NVw3MrYndK9kT2YCcCPlXqk-ao',
+            /* 'parsers' => [
+            'application/json' => 'yii\web\JsonParser',
+            ],*/
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -34,8 +38,8 @@ return [
             ],
         ],
         'errorHandler' => [
-            'errorAction' => 'site/error',
-        ],
+            'errorAction' => 'activity/error',
+        ],                      
         /*
         'urlManager' => [
             'enablePrettyUrl' => true,

@@ -4,6 +4,8 @@ namespace backend\models;
 
 use Yii;
 use yii\behaviors\TimestampBehavior;
+use dosamigos\qrcode\QrCode;
+
 /**
  * This is the model class for table "{{%activities}}".
  *
@@ -47,7 +49,7 @@ class Activities extends \yii\db\ActiveRecord
     {
         return [
             [['title', 'starttime', 'endtime', 'content',], 'required'],
-            [['starttime', 'endtime', 'addtime', 'updatetime'], 'safe'],
+            [['starttime', 'endtime', 'addtime', 'updatetime','qrcode'], 'safe'],
             [['content'], 'string'],
              ['online', 'default', 'value' => self::STATUS_ACTIVE],
             ['online', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
@@ -67,6 +69,7 @@ class Activities extends \yii\db\ActiveRecord
             'endtime' => '结束时间',
             'content' => '活动详情',
             'online' => '活动状态',
+            'qrcode'=>'活动链接二维码',
             'addtime' => '添加时间',
             'updatetime' => '编辑时间',
         ];
@@ -115,6 +118,24 @@ class Activities extends \yii\db\ActiveRecord
               'value' => date('Y-m-d H:i:s',time()),
           ],
       ];
+    }
+
+    /*获取名称*/
+    public static function getname($id){
+        $result = static::findOne($id);
+        return $result->title;
+    }
+
+    /*
+    *获取活动的链接
+    *@id 活动id
+     @type 类型
+    */
+    public static function getlinks($id,$type=false)
+    {
+        $url =  Yii::$app->params['basic']['url']."/index.php?r=activity/index&activity_id={$id}";
+         $result = $type ? $url : Qrcode::png($url);
+        return $result; 
     }
 
 }

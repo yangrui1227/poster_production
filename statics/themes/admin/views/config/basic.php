@@ -50,6 +50,12 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
             </div>
             <div class="form-group">
+                <label class="col-sm-2 col-xs-4 control-label">备案号</label>
+                <div class="col-lg-4 col-sm-6 col-xs-6 input-group">
+                    <textarea name="form[icp]" class="form-control" cols="60" rows="3"><?=isset($formParams['icp']) ? $formParams['icp'] : '';?></textarea>
+                </div>
+            </div>
+            <div class="form-group">
                 <label class="col-sm-2 col-xs-4 control-label">访问统计代码</label>
                 <div class="col-lg-4 col-sm-6 col-xs-6 input-group">
                     <textarea name="form[statcode]" class="form-control" cols="60" rows="3"><?=isset($formParams['statcode']) ? $formParams['statcode'] : '';?></textarea>

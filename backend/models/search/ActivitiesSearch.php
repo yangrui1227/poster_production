@@ -19,7 +19,7 @@ class ActivitiesSearch extends Activities
     {
         return [
             [['id', 'online'], 'integer'],
-            [['title', 'starttime', 'endtime', 'content', 'addtime', 'updatetime'], 'safe'],
+            [['title', 'starttime', 'endtime', 'content', 'addtime', 'updatetime','qrcode'], 'safe'],
         ];
     }
 
@@ -41,7 +41,7 @@ class ActivitiesSearch extends Activities
      */
     public function search($params)
     {
-        $query = Activities::find();
+        $query = Activities::find()->orderby('id desc');
 
         // add conditions that should always apply here
 

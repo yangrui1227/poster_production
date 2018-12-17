@@ -9,6 +9,7 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use dosamigos\qrcode\QrCode;
 use backend\components\AccessControl;
+use yii\helpers\Url;
 
 /**
  * ActivitiesController implements the CRUD actions for Activities model.
@@ -65,13 +66,11 @@ class ActivitiesController extends BaseController
 
     /**
      * @name 生成二维码
+     
      * **/
     public function actionQrcode($id)
     {
-        //$url =  Yii::$app->params['basic']['url']."/index.php?r=site/index&id={$id}";
-        $url = "http://192.168.0.46:8011/index.php?r=activity/index&activity_id={$id}";
-        return Qrcode::png($url);
-
+         return Activities::getlinks($id);
     }
 
     /**

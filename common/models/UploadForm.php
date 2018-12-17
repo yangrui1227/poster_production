@@ -64,7 +64,7 @@ class UploadForm  extends Model
                 self::createDir($path);
         }
         if (Yii::$app->request->isPost) {
-           
+         
             $model = new UploadForm();
             
             if ($this->images) {

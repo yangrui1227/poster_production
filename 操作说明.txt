@@ -1,0 +1,19 @@
+
+修改配置
+文件：common/config/db.php
+
+修改index.php 和admin.php由开发环境改为生产环境
+页面头部
+defined('YII_DEBUG') or define('YII_DEBUG', true);
+defined('YII_ENV') or define('YII_ENV', 'dev');
+改为
+defined('YII_DEBUG') or define('YII_DEBUG', false);
+defined('YII_ENV') or define('YII_ENV', 'prod');
+
+根目录的storage和下面的文件要有权限，给权限755
+
+后台地址：http://www.xxx.com/admin.php
+用户名：admin
+密码：123456
+
+进入后台的 站点配置，修改网站域名为当前的正确域名。

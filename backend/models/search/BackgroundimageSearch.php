@@ -41,7 +41,7 @@ class BackgroundimageSearch extends Backgroundimage
      */
     public function search($params)
     {
-        $query = Backgroundimage::find();
+        $query = Backgroundimage::find()->orderby('id desc');
 
         // add conditions that should always apply here
 

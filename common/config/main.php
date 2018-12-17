@@ -4,14 +4,8 @@ return [
     'language' => 'zh-CN',  //目标语言
     'runtimePath'  => dirname(dirname(__DIR__)) . '/storage/runtime',
     'components' => [
-        'db' => [
-            'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=127.0.0.1;dbname=poster',
-            'username' => 'root',
-            'password' => 'root',
-            'charset' => 'utf8',
-            'tablePrefix' => 'yl_',
-        ],
+        'db'=>require dirname(__FILE__).'/db.php',
+        
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],

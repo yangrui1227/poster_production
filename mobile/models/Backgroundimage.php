@@ -145,5 +145,12 @@ class Backgroundimage extends \yii\db\ActiveRecord
         return $file_img;
     }
  
+    public static function findimage($id)
+    {
+        $result = static::findOne(['id' => $id]);
+        if($result){
+            return $result->attach_file;
+        }
+    }
     
 }

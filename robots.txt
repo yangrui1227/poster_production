@@ -7,7 +7,7 @@ Disallow: /*.css*
 Disallow: /backend/ 
 Disallow: /common/ 
 Disallow: /console/ 
-Disallow: /frontend/ 
+Disallow: /mobile/ 
 Disallow: /statics/ 
 Disallow: /storage/
 Disallow: /core/

@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use yii\helpers\Url;
+use backend\models\Activities;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Activities */
@@ -20,7 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('返回', ['index'], ['class' => 'btn btn-success']) ?>
        
     </p>
-<p>扫码转发<img src="<?=\yii\helpers\Url::to(['qrcode','id' => $model->id])?>" /></p>
+<p>扫码转发<img src="<?=Url::to(['qrcode','id' => $model->id])?>" /></p>
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
@@ -34,6 +36,14 @@ $this->params['breadcrumbs'][] = $this->title;
                 'format' => 'raw',
                 'value' => function($data) {
                     return ($data->getStatus());
+                }
+            ],
+             [
+                'attribute' => 'qrcode',
+                'label'=>'生成链接',
+                'format' => 'raw',
+                'value' => function($data) {
+                    return Activities::getlinks($data->id,true);
                 }
             ],
             'addtime',

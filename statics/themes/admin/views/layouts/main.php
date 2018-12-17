@@ -31,11 +31,11 @@ $allMenus = Menu::getMenu();
 <div class="left-side sticky-left-side">
 
     <div class="logo">
-        <a href="index.html"><img src="/statics/themes/admin/images/logo.png" alt=""></a>
+        <a href="javascript:;"><img src="/statics/themes/admin/images/logo.png" alt=""></a>
     </div>
 
     <div class="logo-icon text-center">
-        <a href="index.html"><img src="/statics/themes/admin/images/logo_icon.png" alt=""></a>
+        <a href="javascript:;"><img src="/statics/themes/admin/images/logo_icon.png" alt=""></a>
     </div>
 
     <div class="left-side-inner">

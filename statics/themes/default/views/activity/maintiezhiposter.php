@@ -65,10 +65,10 @@ $bgimg = UploadFiles::findimage($poster->background_image);
        
        <div style="clear:both"></div>
          
-          
+      <div style="padding-top: 200px;"></div>  
        
        <div class="am-container man-ry-xx">
-     <div class="am-u-md-7 am-u-sm-12 ">
+     <div class="am-u-md-6 am-u-sm-8" style="padding-right: 0px;">
         <uL>
           <li><span>代理人工号：</span><?=$poster->worknumber;?></li>
           <li><span>代理人电话：</span><?=$poster->phone;?></li>
@@ -76,8 +76,8 @@ $bgimg = UploadFiles::findimage($poster->background_image);
           
         </uL>
      </div>
-     <div class="am-u-md-5  am-u-sm-12 am-text-center" style="padding-top:10px">
-     <img src="/statics/themes/default/views/images/weima.png">
+     <div class=" am-u-md-6 am-u-sm-4 am-text-center" style=" padding-top:10px; padding-right: 0px;">
+     <img src="/statics/themes/default/views/images/weima.png" width="100" class="am-img-responsive">
      
      </div>
  </div>

@@ -16,8 +16,8 @@ img { border:0px}
 }
 .action-bg{ background:url(../images/tm.png); border-radius:20px; color:#fd6000}
 
-.zhuti{ font-size:50px; color:#fd6000; text-align:center; font-family:"方正正粗黑简体"; font-style:italic; padding:63px 0 43px 0 }
-.ztys{ font-size:28px;}
+.zhuti{ font-size:30px; color:#fd6000; text-align:center; font-family:"方正正粗黑简体"; font-style:italic; padding:63px 0 43px 0 }
+.ztys{ font-size:20px; line-height: 43px;}
 .action-bg i{ position:relative;}
 .man{ display:block; background:url(../images/tb-ico.png) no-repeat; width:42px; height:42px; background-position:0 0; float:left; margin-right:10px }
 .money{ display:block; background:url(../images/tb-ico.png) no-repeat; width:42px; height:41px; background-position:-84px 0; float:left; margin-right:10px }
@@ -30,9 +30,9 @@ img { border:0px}
 .action-pic img{ margin:0 auto; width:100%}
 
 .action-text{ background-color:#FFF; padding:40px 30px; margin-top:10px; border-radius:10px}
-.action-text .title{ display:block; background:url(../images/tb-ico.png) no-repeat 0 -10px; width:493px; height:41px; background-position:0 -42px; margin:0 auto; text-align:center; font-size:30px;}
+.action-text .title{ display:block; background:url(../images/tb-ico.png) no-repeat 0 -10px; width:493px; height:41px; background-position:0 -42px; margin:0 auto; text-align:center; font-size:25px;}
 .action-text .title span{ display:block; position:relative; top:-15px}
-.action-text p{ font-size:26px; color:#484848}
+.action-text p{ font-size:20px; color:#484848}
 .man-xx{ padding-top:30px}
 .man-xx ul li{ font-size:24px; color:#000}
 .man-xx span{ color:#ff6000; display:block; float:left}
@@ -75,10 +75,10 @@ img { border:0px}
   color: #fff;
   height:auto;
 }
-.name{ font-size:48px; text-align:center; padding-top:130px; padding-bottom:84px}
+.name{ font-size:40px; text-align:center; padding-top:130px; padding-bottom:84px}
 .man-ry-xx{ padding-top:28px; padding-bottom:20px}
-.man-ry-xx ul li{ font-size:22px; line-height:40px; color:#ee5a00}
-.man-ry-xx span{ color:#fff; font-size:22px; display:block; float:left}
+.man-ry-xx ul li{ font-size:17px; line-height:40px; color:#ee5a00}
+.man-ry-xx span{ color:#fff; font-size:17px; display:block; float:left}
 
 .ma{font-size:26px; text-align:center; color:#333}
 @media screen and (min-width: 370px) and (max-width: 500px) {

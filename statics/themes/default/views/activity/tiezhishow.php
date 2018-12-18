@@ -69,7 +69,7 @@ $bgimg = $new_background->save_path;
 <!--16:9比例-->
 <div class="am-g manyy-images " style=" background:url(<?php if($bgimg){echo $bgimg;}else{?>/statics/themes/default/views/images/gryy-bg.png <?php }?> ) center top #000 no-repeat">
   <div class="am-container">
-      <h1 class="name"><?=$data['name'];?></h1>
+      <h1 class="name"></h1>
       
       <?php if($activity_image){?>
       <div class="am-container am-text-center">
@@ -80,10 +80,10 @@ $bgimg = $new_background->save_path;
        
        <div style="clear:both"></div>
          
-          
+         <div style="padding-top: 200px;"></div>   
        
        <div class="am-container man-ry-xx">
-     <div class="am-u-md-7 am-u-sm-12 ">
+     <div class="am-u-md-6 am-u-sm-8" style="padding-right: 0px;">
         <uL>
           <li><span>代理人工号：</span><?=$data['worknumber'];?></li>
           <li><span>代理人电话：</span><?=$data['phone'];?></li>
@@ -91,8 +91,8 @@ $bgimg = $new_background->save_path;
           
         </uL>
      </div>
-     <div class="am-u-md-5  am-u-sm-12 am-text-center" style="padding-top:10px">
-     <img src="/statics/themes/default/views/images/weima.png">
+     <div class=" am-u-md-6 am-u-sm-4 am-text-center" style=" padding-top:10px; padding-right: 0px;">
+     <img src="/statics/themes/default/views/images/weima.png" width="100" class="am-img-responsive">
      
      </div>
  </div>

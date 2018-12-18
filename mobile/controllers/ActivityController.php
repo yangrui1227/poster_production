@@ -1014,7 +1014,7 @@ class ActivityController extends BaseController
         if (Yii::$app->request->isPost) {
             $result = Yii::$app->request->post();
 
-            if(!$result['name'])return $this->msgerror('请填写姓名');
+            //if(!$result['name'])return $this->msgerror('请填写姓名');
             if(!$result['worknumber'])return $this->msgerror('请填写代理人工号'); 
             if(!$result['phone'])return $this->msgerror('请填写代理人手机号'); 
             if(!$result['wechat'])return $this->msgerror('请填写代理人微信');
@@ -1086,7 +1086,7 @@ class ActivityController extends BaseController
           $ActivityPoster->background_id = $data['background_id'];*/
           $ActivityPoster->background_image = $data['new_background_id'];
           $ActivityPoster->activity_image = $data['activity_image'];
-          $ActivityPoster->name = $data['name'];
+         // $ActivityPoster->name = $data['name'];
           $ActivityPoster->worknumber = $data['worknumber'];
           $ActivityPoster->phone = $data['phone'];
           $ActivityPoster->wechat = $data['wechat'];

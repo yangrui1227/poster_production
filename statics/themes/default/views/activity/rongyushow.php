@@ -119,7 +119,7 @@ $bgimg = $new_background->save_path;
        
        <div class="am-u-md-12 am-u-sm-12 ztys">
      
-       <div  style="line-height:40px; padding-top:5px; font-size:28px; text-indent:60px">
+       <div  style="line-height:40px; padding-top:5px; font-size:22px; text-indent:60px">
 <?=$data['brief'];?>
        </div></div>
        
@@ -128,7 +128,7 @@ $bgimg = $new_background->save_path;
           
        
        <div class="am-container man-ry-xx">
-     <div class="am-u-sm-12">
+     <div class="am-u-md-6 am-u-sm-8 " style="padding-right: 0px;">
         <uL>
           <li><span>代理人工号：</span><?=$data['worknumber'];?></li>
           <li><span>代理人电话：</span><?=$data['phone'];?></li>
@@ -136,8 +136,8 @@ $bgimg = $new_background->save_path;
           
         </uL>
      </div>
-     <div class="am-u-sm-12 am-text-center" style=" padding-top:10px">
-     <img src="/statics/themes/default/views/images/weima.png">
+     <div class=" am-u-md-6 am-u-sm-4 am-text-center" style=" padding-top:10px">
+     <img src="/statics/themes/default/views/images/weima.png" width="100" class="am-img-responsive">
      
      </div>
  </div>

@@ -55,7 +55,7 @@ $bgimg = UploadFiles::findimage($poster->background_image);
 <!--16:9比例-->
 <div class="am-g manyy-images " style=" background:url(<?php if($bgimg){echo $bgimg;}else{?>/statics/themes/default/views/images/gryy-bg.png <?php }?>) center top #000 no-repeat">
   <div class="am-container">
-      <h1 class="name"><?=$poster->name;?></h1>
+      <h1 class="name"></h1>
        <?php if($poster->activity_image){?>
       <div class="am-container am-text-center">
             <img src="<?=UploadFiles::findimage($poster->activity_image);?>" class="am-img-responsive" style="margin:0 auto">

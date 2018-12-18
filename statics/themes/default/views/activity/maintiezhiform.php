@@ -21,12 +21,12 @@ $this->metaTags[]="<meta name='description' content='$model->content'/>";
 
       <fieldset>
         
-          <div class="am-form-group">
+          <!-- <div class="am-form-group">
           <label class="am-u-sm-4 am-form-label">代理人姓名：</label>
             <div class="am-u-sm-8 am-form-label">
           <input type="text" class="" id="name" name="name"  placeholder="输入代理人姓名" required>
              </div>
-           </div>
+           </div> -->
            
              <div class="am-form-group">
           <label class="am-u-sm-4 am-form-label">代理人工号：</label>
